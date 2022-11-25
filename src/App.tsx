@@ -16,7 +16,8 @@ function App() {
   useEffect(()=>{
     const interval = setInterval(() => {
       main()
-    }, 500);
+      console.log("refreshed!")
+    }, 1000);
   
     return () => clearInterval(interval);
   //main()
